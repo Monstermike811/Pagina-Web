@@ -2,4 +2,27 @@ h1 {color: aquamarine;font-size: 40px; text-align: center;}
 h2 {color: aquamarine;font-size: 30px;}
 body{background-color: rgb(34, 29, 29); font-family: 'Times New Roman', Times, serif;}
 p {color: antiquewhite;}
+ul {color: antiquewhite;}
 img {height: 400px; width: 600px;}
+
+@keyframes color-change {
+    0% {
+      color: aquamarine;
+    }
+  
+    30% {
+      color: antiquewhite;
+    }
+  
+    100% {
+      color: antiquewhite;
+    }
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
+h2:hover {
+    animation: color-change 3s infinite;
+}
+
